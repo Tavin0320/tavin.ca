@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*
+// Page: Create
+Route::get('create', function () {
+    return view('create');
+});
+*/
+
+Route::resource('passports','PassportController');
